@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizapp.finalPageFXMLController">
+   <children>
+      <BorderPane layoutX="158.0" layoutY="162.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #dadada;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="66.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="66.0" prefWidth="470.0" style="-fx-background-color: #4a4545;">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label prefHeight="46.0" prefWidth="273.0" text="&gt;&gt;Student Details&lt;&lt;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow height="25.0" offsetX="5.0" offsetY="5.0" radius="12.0" spread="0.1" width="25.0" />
+                     </effect></VBox>
+                  <VBox alignment="CENTER" prefHeight="66.0" prefWidth="470.0" style="-fx-background-color: #323232;">
+                     <HBox.margin>
+                        <Insets left="22.0" top="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label prefHeight="46.0" prefWidth="219.0" text="&gt;&gt;Quiz Result&lt;&lt;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow height="25.0" offsetX="5.0" offsetY="5.0" radius="12.0" spread="0.1" width="25.0" />
+                     </effect>
+                  </VBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="534.0" prefWidth="490.0" style="-fx-background-color: #4a4545;">
+                     <children>
+                        <Text layoutX="40.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name :" wrappingWidth="173.515625">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="25.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="40.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roll No :">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="25.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="40.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Division :">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="25.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="41.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year :">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="25.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="40.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Category :">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="25.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="41.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Questions :">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="25.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="name" alignment="CENTER" layoutX="235.0" layoutY="43.0" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: black;" text="$n" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rollno" alignment="CENTER" layoutX="235.0" layoutY="113.0" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: black; -fx-border-radius: 10;" text="$roll" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="division" alignment="CENTER" layoutX="235.0" layoutY="181.0" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: black;" text="$div" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="year" alignment="CENTER" layoutX="235.0" layoutY="245.0" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: black;" text="$y" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="category" alignment="CENTER" layoutX="235.0" layoutY="316.0" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: black;" text="$cat" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="questions" alignment="CENTER" layoutX="235.0" layoutY="388.0" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: black;" text="$totalque" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow height="25.0" offsetX="5.0" offsetY="5.0" radius="12.0" spread="0.1" width="25.0" />
+                     </effect></AnchorPane>
+                  <VBox prefHeight="534.0" prefWidth="490.0">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <AnchorPane prefHeight="250.0" prefWidth="470.0" style="-fx-background-color: #323232;">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <Text layoutX="40.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correct Answers :">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="40.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inorrect Answers :">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="40.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Score :">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="40.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percentage :">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="40.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade :">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="correctans" alignment="CENTER" contentDisplay="CENTER" layoutX="235.0" layoutY="48.0" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: black;" text="$cans" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="incorrectans" alignment="CENTER" layoutX="235.0" layoutY="91.0" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: black; -fx-border-radius: 10;" textAlignment="JUSTIFY" text="$incans" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="score" alignment="CENTER" layoutX="235.0" layoutY="128.0" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: black;" textAlignment="JUSTIFY" text="$s" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="percentage" alignment="CENTER" layoutX="235.0" layoutY="163.0" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: black;" textAlignment="JUSTIFY" text="$percent" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="grade" alignment="CENTER" layoutX="235.0" layoutY="201.0" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: black;" textAlignment="JUSTIFY" text="$g" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <DropShadow height="25.0" offsetX="5.0" offsetY="5.0" radius="12.0" spread="0.1" width="25.0" />
+                           </effect></AnchorPane>
+                        <AnchorPane prefHeight="246.0" prefWidth="470.0" style="-fx-background-color: #646464;">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Text layoutX="111.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Submission" AnchorPane.topAnchor="20.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="28.0" />
+                                 </font>
+                              </Text>
+                              <JFXTextField fx:id="entered_rollno" focusColor="WHITE" labelFloat="true" layoutX="20.0" layoutY="86.0" prefHeight="45.0" prefWidth="266.0" promptText="Enter Your Roll No..." unFocusColor="BLACK" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="86.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="20.0" />
+                                 </font></JFXTextField>
+                              <JFXButton fx:id="submitquizbtn" buttonType="RAISED" layoutX="20.0" layoutY="163.0" onAction="#submit_quiz" prefHeight="45.0" ripplerFill="#646464" style="-fx-background-color: #323232;" text="Submit Quiz" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                 <font>
+                                    <Font name="Bodoni MT Bold" size="22.0" />
+                                 </font></JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow height="25.0" offsetX="5.0" offsetY="5.0" radius="12.0" spread="0.1" width="25.0" />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+         <bottom>
+            <HBox prefHeight="20.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <VBox prefHeight="514.0" prefWidth="20.0" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <VBox prefHeight="514.0" prefWidth="20.0" BorderPane.alignment="CENTER" />
+         </left>
+         <effect>
+            <DropShadow />
+         </effect>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="853.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizapp.enrollQuizFXMLController">
+   <children>
+      <BorderPane layoutX="151.0" layoutY="145.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label prefHeight="61.0" prefWidth="879.0" style="-fx-background-color: #e7e7e7;" text="&gt;&gt;Enroll Yourself" textFill="#4a4545" BorderPane.alignment="TOP_LEFT">
+               <font>
+                  <Font name="Bodoni MT Bold" size="50.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#a49e9e" height="85.25" radius="20.8125" width="0.0" />
+               </effect>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="name" labelFloat="true" prefHeight="45.0" promptText="Your name">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="rollno" labelFloat="true" prefHeight="45.0" promptText="Roll no.">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="emailid" labelFloat="true" prefHeight="45.0" promptText="College email id">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="division" labelFloat="true" prefHeight="45.0" prefWidth="653.0" promptText="Select Division">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="year" labelFloat="true" prefHeight="45.0" prefWidth="653.0" promptText="Select Year">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="category" labelFloat="true" prefHeight="45.0" prefWidth="653.0" promptText="Select Quiz Category">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <left>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefHeight="458.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton buttonType="RAISED" onAction="#startQuiz" prefHeight="54.0" prefWidth="160.0" ripplerFill="BLACK" style="-fx-background-color: #4a4545;" text="Start Quiz" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#exitQuiz" prefHeight="54.0" prefWidth="160.0" ripplerFill="BLACK" style="-fx-background-color: #4a4545;" text="Exit" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" top="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

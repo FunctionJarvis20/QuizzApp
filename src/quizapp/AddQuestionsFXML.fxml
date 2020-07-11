@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="853.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quizapp.AddQuestionsFXMLController">
+   <children>
+      <BorderPane prefHeight="621.0" prefWidth="853.0">
+         <left>
+            <VBox prefHeight="494.0" prefWidth="85.0" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <VBox prefHeight="453.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTextField fx:id="question" focusColor="#4a4545" labelFloat="true" prefHeight="45.0" prefWidth="617.0" promptText="Enter Question" unFocusColor="BLACK">
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="op1" focusColor="#4a4545" labelFloat="true" prefHeight="43.0" prefWidth="617.0" promptText="Option 1" unFocusColor="BLACK">
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="op2" focusColor="#4a4545" labelFloat="true" layoutX="10.0" layoutY="165.0" prefHeight="45.0" prefWidth="617.0" promptText="Option 2" unFocusColor="BLACK">
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="op3" focusColor="#4a4545" labelFloat="true" layoutX="10.0" layoutY="231.0" prefHeight="45.0" prefWidth="617.0" promptText="Option 3" unFocusColor="BLACK">
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="op4" focusColor="#4a4545" labelFloat="true" layoutX="10.0" layoutY="251.0" prefHeight="45.0" prefWidth="617.0" promptText="Option 4" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </JFXTextField>
+                  <JFXTextField fx:id="correct_ans" focusColor="#4a4545" labelFloat="true" layoutX="10.0" layoutY="239.0" prefHeight="45.0" prefWidth="617.0" promptText="Correct Answer" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="category" labelFloat="true" prefHeight="45.0" prefWidth="420.0" promptText="Select Category">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="22.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXComboBox>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <HBox prefHeight="38.0" prefWidth="853.0" style="-fx-background-color: #e7e7e7;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="back_btn" buttonType="RAISED" onAction="#backOption" ripplerFill="BLACK" style="-fx-background-color: #4a4545;" text="&lt;" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Label alignment="CENTER" prefHeight="61.0" prefWidth="562.0" text="Add Your Questions Here" textAlignment="JUSTIFY" textFill="#797474">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="50.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="5.81" offsetX="2.5" offsetY="2.5" radius="1.755" spread="0.93" width="3.21" />
+                     </effect>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="110.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="50.0" prefWidth="853.0" style="-fx-background-color: #e7e7e7;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="submit_btn" buttonType="RAISED" onAction="#submitQuestion" prefHeight="58.0" prefWidth="264.0" ripplerFill="BLACK" style="-fx-background-color: #4a4545; -fx-border-color: black; -fx-border-radius: 5px;" text="Submit" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="85.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="3.86" offsetX="2.5" offsetY="2.5" radius="1.2675" spread="0.93" width="3.21" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="exit_btn" buttonType="RAISED" onAction="#exitApp" prefHeight="54.0" prefWidth="200.0" ripplerFill="BLACK" style="-fx-background-color: #4a4545; -fx-border-color: black; -fx-border-radius: 5px;" text="Exit" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="300.0" right="85.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow blurType="TWO_PASS_BOX" height="3.86" offsetX="2.5" offsetY="2.5" radius="1.2675" spread="0.93" width="3.21" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+         <right>
+            <VBox prefHeight="494.0" prefWidth="85.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
